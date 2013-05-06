@@ -1,0 +1,156 @@
+body {
+    background: none repeat scroll 0 0 #DFE6EB;
+    margin: 0;
+}
+.top {
+    background-color: #FFFFFF;
+    background-image: url("penalolen-logo.png");
+    background-repeat: no-repeat;
+    border-left: 1px solid #CCCCCC;
+    border-right: 1px solid #CCCCCC;
+    height: 70px;
+    padding: 0 48px 0 0;
+    text-align: right;
+    width: 95%;
+}
+.top img {
+    margin: 15px 25px 0 0;
+}
+.content {
+    background: none repeat scroll 0 0 #F6F6F8;
+    border-left: 1px solid #CCCCCC;
+    border-right: 1px solid #CCCCCC;
+    font-family: Arial;
+    font-size: 11px;
+    padding: 15px 24px 25px;
+    width: 95%;
+}
+.footer {
+    background: none repeat scroll 0 0 #FFFFFF;
+    border-bottom: 1px solid #CCCCCC;
+    border-left: 1px solid #CCCCCC;
+    border-right: 1px solid #CCCCCC;
+    clear: both;
+    color: #035795;
+    font-family: Arial,Helvetica,sans-serif;
+    font-size: 11px;
+    line-height: 16px;
+    padding: 10px 24px 25px;
+    text-align: left;
+    width: 95%;
+}
+h1 {
+    color: #0F70B7;
+    font-family: Arial,Helvetica,sans-serif;
+    font-size: 17px;
+    margin: 2px 0 0;
+    padding-top: 2px;
+}
+h2 {
+    color: #1269A8;
+    font-family: Arial,Helvetica,sans-serif;
+    font-size: 13px;
+    margin: 0px 0 0;
+    padding-top: 2px;
+}
+h3 {
+    color: #1269A8;
+    font-size: 13px;
+    font-weight: normal;
+    margin: 0;
+    text-align: right;
+}
+h4 {
+    color: #0F70B7;
+    font-size: 13px;
+    font-weight: normal;
+    line-height: 16px;
+    margin: 0;
+}
+h5 {
+    color: #1269A8;
+    font-family: Arial,Helvetica,sans-serif;
+    font-size: 11px;
+    margin: 2px 0 0;
+    padding-top: 2px;
+}
+.subMenu {
+    float: left;
+    margin: 0 5px 10px;
+    width: 250px;
+}
+.subMenu a:hover {
+    text-decoration: none;
+}
+.subMenu a {
+    background: none repeat scroll 0 0 #FFFFFF;
+    border-left: 1px solid #CCCCCC;
+    border-right: 1px solid #CCCCCC;
+    color: #1060B0;
+    display: block;
+    padding: 4px 8px 2px 16px;
+}
+.subMenu b {
+    background: url("fondo.png") no-repeat scroll 0 0 #FCFCFC;
+    color: #1060B0;
+    display: block;
+    padding-bottom: 4px;
+    padding-left: 8px;
+    padding-top: 9px;
+}
+.subMenu b a {
+    background: none repeat scroll 0 0 transparent;
+    border: medium none;
+    padding: 0;
+}
+.subMenu u {
+    background: url("linea.png") repeat scroll 0 0 #F0F0F0;
+    display: block;
+    font-size: 2px;
+    height: 6px;
+    padding: 0;
+}
+.content2 {
+    background: none repeat scroll 0 0 #F6F6F8;
+    border-left: 1px solid #CCCCCC;
+    border-right: 1px solid #CCCCCC;
+    font-family: Arial;
+    font-size: 11px;
+    padding: 100px 24px 25px;
+    width: 95%;
+}
+.subMenu2 {
+    float: left;
+    margin: 0 5px 10px;
+    width: auto;
+}
+.subMenu2 a:hover {
+    text-decoration: none;
+}
+.subMenu2 a {
+    background: none repeat scroll 0 0 #FFFFFF;
+    border-left: 1px solid #CCCCCC;
+    border-right: 1px solid #CCCCCC;
+    color: #1060B0;
+    display: block;
+    padding: 4px 8px 2px 16px;
+}
+.subMenu2 b {
+    color: #1060B0;
+    display: block;
+    padding-bottom: 4px;
+    padding-left: 8px;
+    padding-top: 9px;
+}
+.subMenu2 b a {
+    background: none repeat scroll 0 0 transparent;
+    border: medium none;
+    padding: 0;
+}
+.subMenu2 u {
+    background: url("linea.png") repeat scroll 0 0 #F0F0F0;
+    display: block;
+    font-size: 2px;
+    height: 6px;
+    padding: 0;
+}

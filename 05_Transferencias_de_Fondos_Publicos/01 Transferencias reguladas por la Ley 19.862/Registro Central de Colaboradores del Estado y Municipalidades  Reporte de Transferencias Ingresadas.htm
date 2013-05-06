@@ -1,0 +1,468 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<meta name="title" content="Registro Central de Colaboradores del Estado y Municipalidades :: Reporte de Transferencias Ingresadas" />
+<meta name="description" content="Registro Central de Colaboradores del Estado y Municipalidades" />
+<meta name="keywords" content="registros ley 19.862" />
+<meta name="language" content="es" />
+<meta name="robots" content="index, follow" />
+
+<title>Registro Central de Colaboradores del Estado y Municipalidades :: Reporte de Transferencias Ingresadas</title>
+
+<link rel="shortcut icon" href="/images/favicon.ico" />
+
+<script type="text/javascript" src="/js/main.js"></script>
+<script type="text/javascript" src="/js/autenticar.js"></script>
+<script type="text/javascript" src="/js/menu.js"></script>
+<script type="text/javascript" src="/js/cargasMasivas.js"></script>
+<script type="text/javascript" src="/js/formularioCargaMasiva.js"></script>
+<script type="text/javascript" src="/js/formularioInstitucion.js"></script>
+<script type="text/javascript" src="/js/formularioRegistrese.js"></script>
+<script type="text/javascript" src="/js/formularioClasificacion.js"></script>
+<script type="text/javascript" src="/js/formularioTransferencia.js"></script>
+<script type="text/javascript" src="/js/formularioMisInstituciones.js"></script>
+<script type="text/javascript" src="/js/formularioReportes.js"></script>
+<script type="text/javascript" src="/js/xml.js"></script>
+<link rel="stylesheet" type="text/css" media="screen" href="/css/produccion.css" />
+<link rel="stylesheet" type="text/css" media="print" href="/css/iproduccion.css" />
+</head>
+<body>
+
+<div id="global">
+  <div id="menuLateral"> 
+	<form action="/" method="post" onsubmit="return ValidaRUT('login_rut', undefined);">
+	<h1>Acceso</h1>
+	<div class="acceso">
+	  <label for="login_rut">Rut</label><br/>
+	  <input size="12" maxlength="12" onblur="ValidaRUT(&#039;login_rut&#039;, undefined);" type="text" name="login[rut]" id="login_rut" /><br/>
+	  <label for="login_clave">Clave</label><br/>
+	  <input size="12" maxlength="255" type="password" name="login[clave]" id="login_clave" /><br/>
+	      <input type="submit" name="commit" value="Acceder" class="botonAzul ancho75" style="border: 1px solid #000000;" />    <input class="botonVerde ancho75" style="border: 1px solid #000000;" value="Registrese" type="button" onclick="document.location.href='/registrese';" />    <a class="linkAyuda" title="Olvid&eacute; mi clave" href="/registrese/recuperar">Olvid&eacute; mi Clave</a>    
+	</div>
+	</form>
+</div>
+
+  <div id="cuerpoCentral">
+    <div id="cabecera">
+      <a href="/"><img height="113" alt="Logo Gobierno de Chile" src="/images/logo_gobierno.gif" /></a>      <h1>Registro Central <br/>de Colaboradores del Estado<br/> y Municipalidades</h1>
+    </div>
+    <div id="menuSuperior">
+      <a id="botonHome" title="Inicio" href="/">Inicio</a>      <a title="Normativas" href="/normativas">Normativas</a>      <a title="Manuales" href="/manuales">Manuales</a>      <a title="Preguntas Frecuentes" href="/preguntasfrecuentes">Preguntas Frecuentes</a>      <a title="Cont&aacute;ctenos" href="/contacto">Cont&aacute;ctenos</a>      <a target="_blank" title="Capacitaci&oacute;n" href="/capacitacion">Capacitaci&oacute;n</a>          </div>
+    <div id="cuerpoContenido">
+	<div id="miga">
+	  <a href="/">Inicio</a>&nbsp;|&nbsp;<a href="/reportes/transferencias/reporte/ingresadas">Reporte de Transferencias Ingresadas</a>&nbsp;|&nbsp;<a href="#">Lista</a>&nbsp;&gt;
+	</div>
+	<h1>Reporte de Transferencias Ingresadas</h1>
+    <div class="anchoTotal izquierda">
+          <table class="tabla100" summary="Resumen de Criterios de Busqueda">
+      <tr>
+      <th colspan="3">
+        Criterios de b&uacute;squeda      </th>
+      </tr>
+              <tr>
+        <td class="label150 margen15">
+          Rut donante        </td>
+        <td class="dos_puntos">
+          :
+        </td>
+        <td class="label negrita">
+                      69.254.000-K                  </td>
+        </tr>
+            </table>
+      </div>
+    	      <div class="anchoTotal">
+        <table class="tabla100 margenInf0">
+        <tr>
+        <td class="negrita">
+          592 resultados
+        </td>
+        <td class="derecha">
+          <input type="button" value="Archivo de Texto" class="botonVerde ancho120" onclick="ArchivoTexto('TransferenciasIngresadas');"/>
+        </td>
+        </tr>
+        </table>
+      </div>
+      <table class="tablaMantenedor margenSup0" cellspacing="0" summary="Reporte de Transferencias Ingresadas">
+      <tr>
+      <th class="tituloMantenedor">
+        <a href="#">Folio</a>      </th>
+      <th class="tituloMantenedor">
+        <a href="#">Donante</a>      </th>
+      <th class="tituloMantenedor">
+        <a href="#">Receptor</a>      </th>
+      <th class="tituloMantenedor">
+        <a href="#">Fecha Decreto</a>      </th>
+      <th class="tituloMantenedor">
+        <a href="#">Fecha Ingreso</a>      </th>
+      <th class="tituloMantenedorLastChild">
+        <a href="#">Monto</a>      </th>
+      </tr>
+              <tr>
+        <td class="celdaMantenedor derecha labelwrap">
+          <a href="/reportes/transferencias/ver/transferencia/folio/8347">8347</a>        </td>
+        <td class="celdaMantenedor izquierda">
+          69.254.000-K<br/>
+          <a href="/fichas/ver/rut/69254000/clase/2">Ilustre Municipalidad de Peñalolén</a>          <br/>
+                      AVENIDA GRECIA 8735 ALCALDE<br/>
+            Peñalolén                  </td>
+        <td class="celdaMantenedor izquierda">
+          65.049.480-6<br/>
+          <a href="/fichas/ver/rut/65049480/clase/5">ASOCIACIÓN DE PROPIETARIOS JORGE ALESSANDRI RODRIGUEZ</a>          <br/>
+                      QUEBRADA DE UMALLANI 639<br/>
+            Peñalolén                  </td>
+        <td class="celdaMantenedor derecha">
+          23/06/2005        </td>
+        <td class="celdaMantenedor derecha">
+          30/09/2004        </td>
+        <td class="celdaMantenedorLastChild derecha labelwrap"> 
+          $ 1.500.000        </td>
+        </tr>
+              <tr>
+        <td class="celdaMantenedor derecha labelwrap">
+          <a href="/reportes/transferencias/ver/transferencia/folio/9924">9924</a>        </td>
+        <td class="celdaMantenedor izquierda">
+          69.254.000-K<br/>
+          <a href="/fichas/ver/rut/69254000/clase/2">Ilustre Municipalidad de Peñalolén</a>          <br/>
+                      AVENIDA GRECIA 8735 ALCALDE<br/>
+            Peñalolén                  </td>
+        <td class="celdaMantenedor izquierda">
+          71.494.200-K<br/>
+          <a href="/fichas/ver/rut/71494200/clase/5">CLUB DE LEONES DE PEÑALOLÉN</a>          <br/>
+                      CONSISTORIAL 2020<br/>
+            Peñalolén                  </td>
+        <td class="celdaMantenedor derecha">
+          23/06/2005        </td>
+        <td class="celdaMantenedor derecha">
+          30/08/2004        </td>
+        <td class="celdaMantenedorLastChild derecha labelwrap"> 
+          $ 257.000        </td>
+        </tr>
+              <tr>
+        <td class="celdaMantenedor derecha labelwrap">
+          <a href="/reportes/transferencias/ver/transferencia/folio/10420">10420</a>        </td>
+        <td class="celdaMantenedor izquierda">
+          69.254.000-K<br/>
+          <a href="/fichas/ver/rut/69254000/clase/2">Ilustre Municipalidad de Peñalolén</a>          <br/>
+                      AVENIDA GRECIA 8735 ALCALDE<br/>
+            Peñalolén                  </td>
+        <td class="celdaMantenedor izquierda">
+          61.008.000-6<br/>
+          <a href="/fichas/ver/rut/61008000/clase/3">SERVICIO NACIONAL DE MENORES</a>          <br/>
+                      HUERFANOS 587 5º PI<br/>
+            Santiago                  </td>
+        <td class="celdaMantenedor derecha">
+          23/06/2005        </td>
+        <td class="celdaMantenedor derecha">
+          30/08/2004        </td>
+        <td class="celdaMantenedorLastChild derecha labelwrap"> 
+          $ 1.232.810        </td>
+        </tr>
+              <tr>
+        <td class="celdaMantenedor derecha labelwrap">
+          <a href="/reportes/transferencias/ver/transferencia/folio/10422">10422</a>        </td>
+        <td class="celdaMantenedor izquierda">
+          69.254.000-K<br/>
+          <a href="/fichas/ver/rut/69254000/clase/2">Ilustre Municipalidad de Peñalolén</a>          <br/>
+                      AVENIDA GRECIA 8735 ALCALDE<br/>
+            Peñalolén                  </td>
+        <td class="celdaMantenedor izquierda">
+          60.506.000-5<br/>
+          <a href="/fichas/ver/rut/60506000/clase/3">POLICÍA DE INVESTIGACIONES DE CHILE</a>          <br/>
+                      GENERAL MACKENNA 1314<br/>
+            Santiago                  </td>
+        <td class="celdaMantenedor derecha">
+          23/06/2005        </td>
+        <td class="celdaMantenedor derecha">
+          30/08/2004        </td>
+        <td class="celdaMantenedorLastChild derecha labelwrap"> 
+          $ 55.000        </td>
+        </tr>
+              <tr>
+        <td class="celdaMantenedor derecha labelwrap">
+          <a href="/reportes/transferencias/ver/transferencia/folio/10423">10423</a>        </td>
+        <td class="celdaMantenedor izquierda">
+          69.254.000-K<br/>
+          <a href="/fichas/ver/rut/69254000/clase/2">Ilustre Municipalidad de Peñalolén</a>          <br/>
+                      AVENIDA GRECIA 8735 ALCALDE<br/>
+            Peñalolén                  </td>
+        <td class="celdaMantenedor izquierda">
+          61.002.000-3<br/>
+          <a href="/fichas/ver/rut/61002000/clase/3">SERVICIO DE REGISTRO CIVIL E IDENTIFICACIÓN</a>          <br/>
+                      CATEDRAL 1772<br/>
+            Santiago                  </td>
+        <td class="celdaMantenedor derecha">
+          23/06/2005        </td>
+        <td class="celdaMantenedor derecha">
+          30/08/2004        </td>
+        <td class="celdaMantenedorLastChild derecha labelwrap"> 
+          $ 100.769        </td>
+        </tr>
+              <tr>
+        <td class="celdaMantenedor derecha labelwrap">
+          <a href="/reportes/transferencias/ver/transferencia/folio/10425">10425</a>        </td>
+        <td class="celdaMantenedor izquierda">
+          69.254.000-K<br/>
+          <a href="/fichas/ver/rut/69254000/clase/2">Ilustre Municipalidad de Peñalolén</a>          <br/>
+                      AVENIDA GRECIA 8735 ALCALDE<br/>
+            Peñalolén                  </td>
+        <td class="celdaMantenedor izquierda">
+          70.786.200-9<br/>
+          <a href="/fichas/ver/rut/70786200/clase/4">CORPORACIÓN DE ASISTENCIA JUDICIAL</a>          <br/>
+                      AGUSTINAS 1419<br/>
+            Santiago                  </td>
+        <td class="celdaMantenedor derecha">
+          23/06/2005        </td>
+        <td class="celdaMantenedor derecha">
+          30/08/2004        </td>
+        <td class="celdaMantenedorLastChild derecha labelwrap"> 
+          $ 2.270.000        </td>
+        </tr>
+              <tr>
+        <td class="celdaMantenedor derecha labelwrap">
+          <a href="/reportes/transferencias/ver/transferencia/folio/13044">13044</a>        </td>
+        <td class="celdaMantenedor izquierda">
+          69.254.000-K<br/>
+          <a href="/fichas/ver/rut/69254000/clase/2">Ilustre Municipalidad de Peñalolén</a>          <br/>
+                      AVENIDA GRECIA 8735 ALCALDE<br/>
+            Peñalolén                  </td>
+        <td class="celdaMantenedor izquierda">
+          71.234.100-9<br/>
+          <a href="/fichas/ver/rut/71234100/clase/5">CORPORACIÓN MUNICIPAL DE PEÑALOLEN</a>          <br/>
+                      AV. ORIENTAL 6958<br/>
+            Peñalolén                  </td>
+        <td class="celdaMantenedor derecha">
+          23/06/2005        </td>
+        <td class="celdaMantenedor derecha">
+          30/09/2004        </td>
+        <td class="celdaMantenedorLastChild derecha labelwrap"> 
+          $ 14.996.000        </td>
+        </tr>
+              <tr>
+        <td class="celdaMantenedor derecha labelwrap">
+          <a href="/reportes/transferencias/ver/transferencia/folio/13049">13049</a>        </td>
+        <td class="celdaMantenedor izquierda">
+          69.254.000-K<br/>
+          <a href="/fichas/ver/rut/69254000/clase/2">Ilustre Municipalidad de Peñalolén</a>          <br/>
+                      AVENIDA GRECIA 8735 ALCALDE<br/>
+            Peñalolén                  </td>
+        <td class="celdaMantenedor izquierda">
+          70.003.700-2<br/>
+          <a href="/fichas/ver/rut/70003700/clase/5">CUERPO DE BOMBEROS DE ÑUÑOA</a>          <br/>
+                      JOSE PEDRO ALESANDRI 845<br/>
+            Ñuñoa                  </td>
+        <td class="celdaMantenedor derecha">
+          23/06/2005        </td>
+        <td class="celdaMantenedor derecha">
+          30/09/2004        </td>
+        <td class="celdaMantenedorLastChild derecha labelwrap"> 
+          $ 5.000.000        </td>
+        </tr>
+              <tr>
+        <td class="celdaMantenedor derecha labelwrap">
+          <a href="/reportes/transferencias/ver/transferencia/folio/13055">13055</a>        </td>
+        <td class="celdaMantenedor izquierda">
+          69.254.000-K<br/>
+          <a href="/fichas/ver/rut/69254000/clase/2">Ilustre Municipalidad de Peñalolén</a>          <br/>
+                      AVENIDA GRECIA 8735 ALCALDE<br/>
+            Peñalolén                  </td>
+        <td class="celdaMantenedor izquierda">
+          70.021.730-2<br/>
+          <a href="/fichas/ver/rut/70021730/clase/5">VOLUNTARIAS DAMAS DE ROSADO</a>          <br/>
+                      ANTONIO VARAS 360<br/>
+            Providencia                  </td>
+        <td class="celdaMantenedor derecha">
+          23/06/2005        </td>
+        <td class="celdaMantenedor derecha">
+          30/09/2004        </td>
+        <td class="celdaMantenedorLastChild derecha labelwrap"> 
+          $ 155.000        </td>
+        </tr>
+              <tr>
+        <td class="celdaMantenedor derecha labelwrap">
+          <a href="/reportes/transferencias/ver/transferencia/folio/13056">13056</a>        </td>
+        <td class="celdaMantenedor izquierda">
+          69.254.000-K<br/>
+          <a href="/fichas/ver/rut/69254000/clase/2">Ilustre Municipalidad de Peñalolén</a>          <br/>
+                      AVENIDA GRECIA 8735 ALCALDE<br/>
+            Peñalolén                  </td>
+        <td class="celdaMantenedor izquierda">
+          74.295.700-4<br/>
+          <a href="/fichas/ver/rut/74295700/clase/5">HOGAR CREA CHILE</a>          <br/>
+                      GUILLERMO ACUÑA 2510<br/>
+            Providencia                  </td>
+        <td class="celdaMantenedor derecha">
+          23/06/2005        </td>
+        <td class="celdaMantenedor derecha">
+          30/09/2004        </td>
+        <td class="celdaMantenedorLastChild derecha labelwrap"> 
+          $ 988.000        </td>
+        </tr>
+              <tr>
+        <td class="celdaMantenedor derecha labelwrap">
+          <a href="/reportes/transferencias/ver/transferencia/folio/13057">13057</a>        </td>
+        <td class="celdaMantenedor izquierda">
+          69.254.000-K<br/>
+          <a href="/fichas/ver/rut/69254000/clase/2">Ilustre Municipalidad de Peñalolén</a>          <br/>
+                      AVENIDA GRECIA 8735 ALCALDE<br/>
+            Peñalolén                  </td>
+        <td class="celdaMantenedor izquierda">
+          71.389.300-5<br/>
+          <a href="/fichas/ver/rut/71389300/clase/5">CORPORACIÓN PARA LA FIBRÓSIS QUÍSTICA DEL PÁNCREAS</a>          <br/>
+                      GRAL.BUSTAMANTE 130 1503<br/>
+            Providencia                  </td>
+        <td class="celdaMantenedor derecha">
+          23/06/2005        </td>
+        <td class="celdaMantenedor derecha">
+          30/09/2004        </td>
+        <td class="celdaMantenedorLastChild derecha labelwrap"> 
+          $ 515.000        </td>
+        </tr>
+              <tr>
+        <td class="celdaMantenedor derecha labelwrap">
+          <a href="/reportes/transferencias/ver/transferencia/folio/13058">13058</a>        </td>
+        <td class="celdaMantenedor izquierda">
+          69.254.000-K<br/>
+          <a href="/fichas/ver/rut/69254000/clase/2">Ilustre Municipalidad de Peñalolén</a>          <br/>
+                      AVENIDA GRECIA 8735 ALCALDE<br/>
+            Peñalolén                  </td>
+        <td class="celdaMantenedor izquierda">
+          70.956.100-6<br/>
+          <a href="/fichas/ver/rut/70956100/clase/5">FUNDACION CEMA CHILE</a>          <br/>
+                      AVENIDA FRANCISCO BILBAO 1145<br/>
+            Providencia                  </td>
+        <td class="celdaMantenedor derecha">
+          23/06/2005        </td>
+        <td class="celdaMantenedor derecha">
+          30/09/2004        </td>
+        <td class="celdaMantenedorLastChild derecha labelwrap"> 
+          $ 360.000        </td>
+        </tr>
+              <tr>
+        <td class="celdaMantenedor derecha labelwrap">
+          <a href="/reportes/transferencias/ver/transferencia/folio/13059">13059</a>        </td>
+        <td class="celdaMantenedor izquierda">
+          69.254.000-K<br/>
+          <a href="/fichas/ver/rut/69254000/clase/2">Ilustre Municipalidad de Peñalolén</a>          <br/>
+                      AVENIDA GRECIA 8735 ALCALDE<br/>
+            Peñalolén                  </td>
+        <td class="celdaMantenedor izquierda">
+          70.377.400-8<br/>
+          <a href="/fichas/ver/rut/70377400/clase/5">FUNDACIÓN ARTURO LÓPEZ PÉREZ</a>          <br/>
+                      RANCAGUA 878<br/>
+            Providencia                  </td>
+        <td class="celdaMantenedor derecha">
+          23/06/2005        </td>
+        <td class="celdaMantenedor derecha">
+          30/09/2004        </td>
+        <td class="celdaMantenedorLastChild derecha labelwrap"> 
+          $ 258.000        </td>
+        </tr>
+              <tr>
+        <td class="celdaMantenedor derecha labelwrap">
+          <a href="/reportes/transferencias/ver/transferencia/folio/13060">13060</a>        </td>
+        <td class="celdaMantenedor izquierda">
+          69.254.000-K<br/>
+          <a href="/fichas/ver/rut/69254000/clase/2">Ilustre Municipalidad de Peñalolén</a>          <br/>
+                      AVENIDA GRECIA 8735 ALCALDE<br/>
+            Peñalolén                  </td>
+        <td class="celdaMantenedor izquierda">
+          71.494.200-K<br/>
+          <a href="/fichas/ver/rut/71494200/clase/5">CLUB DE LEONES DE PEÑALOLÉN</a>          <br/>
+                      CONSISTORIAL 2020<br/>
+            Peñalolén                  </td>
+        <td class="celdaMantenedor derecha">
+          23/06/2005        </td>
+        <td class="celdaMantenedor derecha">
+          30/09/2004        </td>
+        <td class="celdaMantenedorLastChild derecha labelwrap"> 
+          $ 258.000        </td>
+        </tr>
+              <tr>
+        <td class="celdaMantenedor derecha labelwrap">
+          <a href="/reportes/transferencias/ver/transferencia/folio/13063">13063</a>        </td>
+        <td class="celdaMantenedor izquierda">
+          69.254.000-K<br/>
+          <a href="/fichas/ver/rut/69254000/clase/2">Ilustre Municipalidad de Peñalolén</a>          <br/>
+                      AVENIDA GRECIA 8735 ALCALDE<br/>
+            Peñalolén                  </td>
+        <td class="celdaMantenedor izquierda">
+          70.574.900-0<br/>
+          <a href="/fichas/ver/rut/70574900/clase/5">FUND EDUCACIONAL PARA EL DESARROLLO INTEGRAL DEL M</a>          <br/>
+                      ALONSO OVALLE 1180  1180<br/>
+            Santiago                  </td>
+        <td class="celdaMantenedor derecha">
+          23/06/2005        </td>
+        <td class="celdaMantenedor derecha">
+          30/09/2004        </td>
+        <td class="celdaMantenedorLastChild derecha labelwrap"> 
+          $ 5.150.000        </td>
+        </tr>
+            </table>
+              <div class="paginas_mantenedor">
+          <div class="medio">
+            <a href="JavaScript: document.getElementById('pagina').value='1'; document.getElementById('form').submit();"><img title="Inicio" alt="Inicio" src="/images/inicio.png" /></a>
+          </div>
+          <div class="medio">
+            <a href="JavaScript: document.getElementById('pagina').value='1'; document.getElementById('form').submit();"><img title="Anterior" alt="Anterior" src="/images/anterior.png" /></a>
+          </div>
+                                <div class="medio">
+              &nbsp;&nbsp;
+                              1                            &nbsp;
+            </div>
+                      <div class="medio">
+              &nbsp;&nbsp;
+                              <a href="JavaScript: document.getElementById('pagina').value='2'; document.getElementById('form').submit();">2</a>
+                            &nbsp;
+            </div>
+                      <div class="medio">
+              &nbsp;&nbsp;
+                              <a href="JavaScript: document.getElementById('pagina').value='3'; document.getElementById('form').submit();">3</a>
+                            &nbsp;
+            </div>
+                      <div class="medio">
+              &nbsp;&nbsp;
+                              <a href="JavaScript: document.getElementById('pagina').value='4'; document.getElementById('form').submit();">4</a>
+                            &nbsp;
+            </div>
+                      <div class="medio">
+              &nbsp;&nbsp;
+                              <a href="JavaScript: document.getElementById('pagina').value='5'; document.getElementById('form').submit();">5</a>
+                            &nbsp;
+            </div>
+                    <div class="medio">
+            <a href="JavaScript: document.getElementById('pagina').value='2'; document.getElementById('form').submit();"><img title="Siguiente" alt="Siguiente" src="/images/siguiente.png" /></a>
+          </div>
+          <div class="medio">
+            <a href="JavaScript: document.getElementById('pagina').value='40'; document.getElementById('form').submit();"><img title="Fin" alt="Fin" src="/images/fin.png" /></a>          </div>
+        </div>
+            </div>
+<form action="/reportes/transferencias/reporte/ingresadas" method="get" id="form">
+<input type="hidden" name="pagina" id="pagina" value=""/>
+<input type="hidden" name="WHERE[transferencia][tipo_fecha]" value="0"/>
+<input type="hidden" name="WHERE[transferencia][fecha_desde]" value=""/>
+<input type="hidden" name="WHERE[transferencia][fecha_hasta]" value=""/>
+<input type="hidden" name="WHERE[transferencia][rut_donante]" value="69.254.000-K"/>
+<input type="hidden" name="WHERE[transferencia][nombre_donante]" value=""/>
+<input type="hidden" name="WHERE[transferencia][rut_receptor]" value=""/>
+<input type="hidden" name="WHERE[transferencia][nombre_receptor]" value=""/>
+<input type="hidden" name="WHERE[transferencia][agrupar]" value="0"/>
+</form>
+<form action="/fichas/ver" method="post" id="form2">
+<input type="hidden" name="rut" id="ficha_rut" value=""/>
+<input type="hidden" name="clase" id="ficha_clase" value=""/>
+</form>
+
+  </div>
+  <div style="clear:both;"></div>
+</div>
+<div id="pie">
+  <div id="uno"></div>
+  <div id="dos"><img alt="Gobierno de Chile" src="/images/pie_insignia.jpg" /><p>REGISTRO CENTRAL<br/>DE COLABORADORES DEL ESTADO <br/>Y MUNICIPALIDADES</p></div>
+  <div id="tres"><p>&copy; GOBIERNO DE CHILE<br/>Ministerio del Interior<br/>Ministerio de Hacienda</p></div>
+  <div id="cuatro"><p>Subsecretar&iacute;a de Desarrollo Regional y Administrativo<br/>Subsecretar&iacute;a de Hacienda<br/><a title="Pol&iacute;ticas de Privacidad" href="/politicas">Pol&iacute;ticas de Privacidad</a>&nbsp;|&nbsp;<a title="Condiciones de Uso" href="/condiciones">Condiciones de Uso</a>&nbsp;|&nbsp;<a title="Accesibilidad" href="/accesibilidad">Accesibilidad</a></p></div>
+  <div style="clear:both;"></div>
+</div>
+</body>
+</html>

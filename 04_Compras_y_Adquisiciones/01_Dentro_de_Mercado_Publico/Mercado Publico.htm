@@ -1,0 +1,719 @@
+
+<html xmlns="http://www.w3.org/1999/xhtml" >
+<head id="Head1"><title>
+	Mercado Publico
+</title>
+    <script type="text/javascript" src="Utilidades/js/jquery.js"></script>
+    <script type="text/javascript" src="Utilidades/Scripts/AdvancedSearchScripts.js"></script>
+    <script type="text/javascript" src="Utilidades/scripts/Common.js"></script>
+    <script type="text/javascript" src="Utilidades/js/embeddedcontent.js" defer="defer"></script>
+    <script type="text/javascript" src="Utilidades/js/external/jquery.bgiframe-2.1.1.js"></script>
+    <script type="text/javascript" src="Utilidades/js/ui/jquery.ui.core.js"></script>
+    <script type="text/javascript" src="Utilidades/js/ui/jquery.ui.widget.js"></script>
+    <script type="text/javascript" src="Utilidades/js/ui/jquery.ui.mouse.js"></script>
+    <script type="text/javascript" src="Utilidades/js/ui/jquery.ui.button.js"></script>
+    <script type="text/javascript" src="Utilidades/js/ui/jquery.ui.draggable.js"></script>
+    <script type="text/javascript" src="Utilidades/js/ui/jquery.ui.position.js"></script>
+    <script type="text/javascript" src="Utilidades/js/ui/jquery.ui.resizable.js"></script>
+    <script type="text/javascript" src="Utilidades/js/ui/jquery.ui.dialog.js"></script>
+    <script type="text/javascript" src="Utilidades/js/ui/jquery.effects.core.js"></script>
+    <script type="text/javascript" src="Utilidades/scripts/AdvancedSearchFunctions.js" ></script>
+    <link type="text/css" href="Utilidades/js/demos.css" rel="stylesheet" /><link type="text/css" href="Utilidades/js/themes/base/jquery.ui.all.css" rel="stylesheet" /><link href="Utilidades/styles/AdvancedSearchPortal.css" rel="stylesheet" type="text/css" />
+        <style type="text/css">
+            .style5
+            {
+                width: 58px;
+            }
+    </style>
+        </head>
+<body  bgcolor="#E6E6E6" link="#F47532" >
+    <script type="text/javascript" src="Utilidades/Scripts/wz_tooltip.js"></script>
+    <script type="text/javascript" src="Utilidades/Scripts/tip_followscroll.js"></script>
+    <script type="text/javascript" src="Utilidades/Scripts/tip_centerwindow.js"></script>
+  <form name="form1" method="post" action="ResultadoBusqueda.aspx?qs=1" id="form1">
+<div>
+<input type="hidden" name="__EVENTTARGET" id="__EVENTTARGET" value="" />
+<input type="hidden" name="__EVENTARGUMENT" id="__EVENTARGUMENT" value="" />
+<input type="hidden" name="ToolkitScriptManager1_HiddenField" id="ToolkitScriptManager1_HiddenField" value="" />
+<input type="hidden" name="__VIEWSTATE" id="__VIEWSTATE" value="/wEPDwUJLTU1MzQ2MjU4D2QWAgIDD2QWAgIDD2QWAmYPZBYCAgUPFgIeBWNsYXNzZRYCZg9kFgJmD2QWCAIDD2QWCGYPZBYCZg9kFgYCAQ8PFgQeBFRleHQFEVDDoWdpbmEgZGUgSW5pY2lvHgtOYXZpZ2F0ZVVybAUTLi4vLi4vLi4vbG9naW4uYXNweGRkAgMPDxYEHwEFGULDunNxdWVkYSBkZSBMaWNpdGFjaW9uZXMfAgUaQnVzY2Fkb3JBdmFuemFkby5hc3B4P3FzPTFkZAIFDw8WBB8BBRlSZXN1bHRhZG8gZGUgbGljaXRhY2lvbmVzHwIFG1Jlc3VsdGFkb0J1c3F1ZWRhLmFzcHg/cXM9MWRkAgEPZBYCZg9kFgQCAQ8PFgQfAQUWQsO6c3F1ZWRhIGRlIENvbnRyYXRvcx8CBRpCdXNjYWRvckF2YW56YWRvLmFzcHg/cXM9M2RkAgQPDxYEHwEFGUJ1c2NhciDDk3JkZW5lcyBkZSBDb21wcmEfAgUaQnVzY2Fkb3JBdmFuemFkby5hc3B4P3FzPTJkZAICD2QWAmYPZBYCAgEPDxYCHwEFGVJlc3VsdGFkbyBkZSBsaWNpdGFjaW9uZXNkZAIDD2QWAmYPZBYGAgEPDxYCHwEF+gE8dT5Cw7pzcXVlZGEgUmVhbGl6YWRhOiA8L3U+ICZuYnNwOyZuYnNwO0xpY2l0YWNpb25lcyBQb3IgQ29tcHJhZG9yOiA8Yj5JLk1VTklDSVBBTElEQUQgREUgUEXDkUFMT0xFTjwvYj4mbmJzcDtQb3IgUmVnaW9uOiA8Yj5Ub2RhcyBsYXMgUmVnaW9uZXM8L2I+Jm5ic3A7UG9yIEVzdGFkbzogPGI+QWRqdWRpY2FkYTwvYj4mbmJzcDtQb3IgRmVjaGEgPGI+RmVjaGEgUHVibGljYWNpw7NuOiAwMS0wMS0yMDEyIGFsIDI2LTA2LTIwMTI8L2I+ZGQCAw8PFgIfAQUjRHVyYWNpw7NuIDogPGI+MCwxIHNlZ3VuZG9zPC9iPjxicj5kZAIFDw8WAh8BBRlWZXIgcmVzdWx0YWRvcyBjb21vIGxpc3RhZGQCBQ9kFgQCAQ8WAh4LXyFJdGVtQ291bnQCChYWZg9kFg4CAQ8WAh4Fd2lkdGgFBTEwMHB4FgQCAQ8PFgYeCENzc0NsYXNzBQ1jc3NSZXN1bHREYXRlHwEFB07Dum1lcm8eBF8hU0ICAmRkAgMPDxYCHghJbWFnZVVybAU4fi9Nb2R1bGVzL1NpdGUvQnVzcXVlZGFzL1V0aWxpZGFkZXMvaW1hZ2VzL3NpbkltYWdlbi5wbmdkZAIDDxYCHwQFBTI1MHB4FgQCAQ8PFgYfBQUNY3NzUmVzdWx0RGF0ZR8BBRhOb21icmUgZGUgbGEgTGljaXRhY2nDs24fBgICZGQCAw8PFgIfBwU4fi9Nb2R1bGVzL1NpdGUvQnVzcXVlZGFzL1V0aWxpZGFkZXMvaW1hZ2VzL3NpbkltYWdlbi5wbmdkZAIFDxYCHwQFBTIxMHB4FgQCAQ8PFgYfBQUNY3NzUmVzdWx0RGF0ZR8BBQlDb21wcmFkb3IfBgICZGQCAw8PFgIfBwU4fi9Nb2R1bGVzL1NpdGUvQnVzcXVlZGFzL1V0aWxpZGFkZXMvaW1hZ2VzL3NpbkltYWdlbi5wbmdkZAIHDxYCHgdWaXNpYmxlaBYEAgEPDxYGHwUFDWNzc1Jlc3VsdERhdGUfAQUMRmVjaGEgQ2llcnJlHwYCAmRkAgMPDxYCHwcFOH4vTW9kdWxlcy9TaXRlL0J1c3F1ZWRhcy9VdGlsaWRhZGVzL2ltYWdlcy9zaW5JbWFnZW4ucG5nZGQCCQ8WAh8EBQUxMDBweBYEAgEPDxYGHwUFDWNzc1Jlc3VsdERhdGUfAQUMRmVjaGEgQ2llcnJlHwYCAmRkAgMPDxYCHwcFOH4vTW9kdWxlcy9TaXRlL0J1c3F1ZWRhcy9VdGlsaWRhZGVzL2ltYWdlcy9zaW5JbWFnZW4ucG5nZGQCCw8WAh8EBQUxMDBweBYEAgEPDxYGHwUFDWNzc1Jlc3VsdERhdGUfAQUGRXN0YWRvHwYCAmRkAgMPDxYCHwcFOH4vTW9kdWxlcy9TaXRlL0J1c3F1ZWRhcy9VdGlsaWRhZGVzL2ltYWdlcy9zaW5JbWFnZW4ucG5nZGQCDQ8WAh8EBQMwcHgWAgIBDw8WBh8FBQ1jc3NSZXN1bHREYXRlHwEFCFZlciBtw6FzHwYCAmRkAgEPZBYOAgEPFgIfBAUFMTAwcHgWBAIBDw8WAh8BBQ0yNDAzLTE5MC1MMTEyFgIeB29uY2xpY2sFjAJqYXZhc2NyaXB0OndpbmRvdy5vcGVuKCcuLi8u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Qk94bzRJTlZPdlQ1OTZoTjBNOXMwQVJYdjNtN1RIbDgyYWpXekRCQXRhOUNaeWUnLCdEZXRhaWwnLCd3aWR0aD03MDAsaGVpZ2h0PTQwMCwgc3RhdHVzPXllcywgc2Nyb2xsYmFycz15ZXMsIGxlZnQ9MCwgdG9wPTAsIHJlc2l6YWJsZT15ZXMnKTtldmVudC5yZXR1cm5WYWx1ZT1mYWxzZTtkAgMPDxYCHwEFBzY3MzE4NThkZAIDDxYCHwQFBTI1MHB4FgICAQ8PFgIfAQUqRU5UUkFEQVMgUEFSQSBQQVJRVUUgUkVDUkVBVElWTyBTTVVFIDY5NDkxZGQCBQ8WAh8EBQUyMTBweBYEAgEPDxYCHwEFBDMzOTVkZAIDDw8WAh8BBR1JLk1VTklDSVBBTElEQUQgREUgUEXDkUFMT0xFThYCHwkFH2phdmFzY3JpcHQ6QWJyaXJWZW50YW5hKCczMzk1JylkAgcPFgIfCGgWBAIBDw8WAh8BBQEwZGQCAw8PFgIfAWVkZAIJDxYCHwQFBTEwMHB4FgICAQ8PFgIfAQUTMjItMDUtMjAxMiAxNToxNDowMGRkAgsPFgIfBAUFMTAwcHgWAgIBDw8WAh8BBQpBZGp1ZGljYWRhZGQCDQ9kFgYCAQ8PZBYCHwkFowFqYXZhc2NyaXB0OlRhYmxhUmVzdWx0YWRvKCcyNDAzLTE2OC1MMTEyJywnRU5UUkFEQVMgUEFSQSBQQVJRVUUgUkVDUkVBVElWTyBTTVVFIDY5NDkxJywnQ09NUFJBIERFIEVOVFJBREFTIFBBUkEgUEFSUVVFIFJFQ1JFQVRJVk8gUFJPR1JBTUEgVklOQ1VMT1MgQURVTFRPIE1BWU9SJyk7ZAIDDw8WAh8KBQc2NzMxODU4ZGQCBA8PFgIfAQVIQ09NUFJBIERFIEVOVFJBREFTIFBBUkEgUEFSUVVFIFJFQ1JFQVRJVk8gUFJPR1JBTUEgVklOQ1VMT1MgQURVTFRPIE1BWU9SZGQCBw9kFg4CAQ8WAh8EBQUxMDBweBYEAgEPDxYCHwEFDTI0MDMtMTYxLUwxMTIWAh8JBYwCamF2YXNjcmlwdDp3aW5kb3cub3BlbignLi4vLi4vLi4vLi4vUHJvY3VyZW1lbnQvTW9kdWxlcy9SRkIvRGV0YWlsc0FjcXVpc2l0aW9uLmFz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ZWwuYXNweD9xcz1OWkRXbkRlZVZRTW1OWElJM1FJWWtRPT0nLCdFeGNlbCcsJ3dpZHRoPTAsaGVpZ2h0PTAsIHN0YXR1cz15ZXMsIHNjcm9sbGJhcnM9eWVzLCBsZWZ0PTAsIHRvcD0wLCByZXNpemFibGU9eWVzJyk7ZXZlbnQucmV0dXJuVmFsdWU9ZmFsc2U7ZAIPDw8WAh8BBagHU0VMRUNUIFRPUCAgNTAwIEgucmJoQ29kZSBhcyBpZCwgSC5yYmhFeHRlcm5hbENvZGUgYXMgY29kaWdvLCBsdHJpbShydHJpbShILnJiaE5hbWUpKSBhcyBub21icmUsIEgucmJoRGVzY3JpcHRpb24gYXMgZGVzY3JpcGNpb24sIHJiaEVudGVycHJpc2UgYXMgQ29kaWdvQ29tcHJhZG9yLCAgIA0KKHNlbGVjdCBUT1AgMSBFLmVudE5hbWUgRlJPTSBEQ0NQUGxhdGZvcm0uZGJvLmdibGVudGVycHJpc2UgRSB3aGVyZSBFLmVudENvZGUgPUgucmJoRW50ZXJwcmlzZSkgIEFTIE5vbWJyZUNvbXByYWRvciwNCiAgICBzdGEucnN0UHVibGljTmFtZSAgYXMgRXN0YWRvLHN0YS5yc3RDb2RlIGFzIGNvZGlnb0VzdGFkbywgcmJoT3JnYW5pemF0aW9uIGFzIENvZGlnb1N1Y3Vyc2FsLDAgYXMgQ29kaWdvUHJvdmVlZG9yLCcnIE5vbWJyZVByb3ZlZWRvciwgIEQucmJkVGVjaG5pY2FsQmlkUmVjZXB0aW9uICBGZWNoYQ0KICAgIEZST00NCiAgICBEQ0NQUHJvY3VyZW1lbnQuLnByY1JGQkhlYWRlciBIIFdJVEggKE5PTE9DSykNCiAgICBJTk5FUiBKT0lOIERDQ1BQcm9jdXJlbWVudC4ucHJjUkZCRGF0ZSBEICBXSVRIIChOT0xPQ0spIE9OIEgucmJoQ29kZSA9IEQucmJkUkZCQ29kZQ0KICAgIElOTkVSIEpPSU4gRENDUFByb2N1cmVtZW50Li5wcmNSRkJTdGF0dXMgc3RhIE9OIEgucmJoRG9jdW1lbnRTdGF0dXMgPSBzdGEucnN0Q29kZQ0KV0hFUkUNCg0KSC5yYmhFbnRlcnByaXNlID0gJzg3MTcyJw0KQU5EDQpyYmhEb2N1bWVudFN0YXR1cyBJTiAoU0VMRUNUIHJzdENvZGUgRlJPTSBwcmNSZmJTdGF0dXMgV0hFUkUgcnN0R3JvdXAgPSA4KQ0KQU5EDQpELnJiZE9wZW5pbmdEYXRlIEJFVFdFRU4gJzIwMTItMDEtMDEgMDA6MDA6MDAnIEFORCAnMjAxMi0wNi0yNiAyMzo1OTo1OScNCg0KT1JERVIgQlkgRC5yYmRUZWNobmljYWxCaWRSZWNlcHRpb24gREVTQw0KZGQYAQUeX19Db250cm9sc1JlcXVpcmVQb3N0QmFja0tleV9fFg0FJHJwdFJlc3VsdGFkb3MkY3RsMDEkQm90b25JbmZvcm1hY2lvbgUkcnB0UmVzdWx0YWRvcyRjdGwwMiRCb3RvbkluZm9ybWFjaW9uBSRycHRSZXN1bHRhZG9zJGN0bDAzJEJvdG9uSW5mb3JtYWNpb24FJHJwdFJlc3VsdGFkb3MkY3RsMDQkQm90b25JbmZvcm1hY2lvbgUkcnB0UmVzdWx0YWRvcyRjdGwwNSRCb3RvbkluZm9ybWFjaW9uBSRycHRSZXN1bHRhZG9zJGN0bDA2JEJvdG9uSW5mb3JtYWNpb24FJHJwdFJlc3VsdGFkb3MkY3RsMDckQm90b25JbmZvcm1hY2lvbgUkcnB0UmVzdWx0YWRvcyRjdGwwOCRCb3RvbkluZm9ybWFjaW9uBSRycHRSZXN1bHRhZG9zJGN0bDA5JEJvdG9uSW5mb3JtYWNpb24FJHJwdFJlc3VsdGFkb3MkY3RsMTAkQm90b25JbmZvcm1hY2lvbgUMSW1hZ2VCdXR0b24xBRJidG5DZXJyYXJPcmdhbmlzbW8FD2J0bkNlcnJhckVzcGVyYX4FO7TKYaZOpdihpDpotQuwpkVU" />
+</div>
+
+<script type="text/javascript">
+//<![CDATA[
+var theForm = document.forms['form1'];
+if (!theForm) {
+    theForm = document.form1;
+}
+function __doPostBack(eventTarget, eventArgument) {
+    if (!theForm.onsubmit || (theForm.onsubmit() != false)) {
+        theForm.__EVENTTARGET.value = eventTarget;
+        theForm.__EVENTARGUMENT.value = eventArgument;
+        theForm.submit();
+    }
+}
+//]]>
+</script>
+
+
+<script src="/Portal/WebResource.axd?d=SqZa8GYeN-voTRZ-GMsb11KKLzsM4GjYxTGAXg23ajVoLdblDojATKR_7aSBdwvGYc1HUN_gkQjb5mtE0&amp;t=634687139320433632" type="text/javascript"></script>
+
+
+<script src="/Portal/ScriptResource.axd?d=awcP0EjH8lFeXdlpYi2UL6a6V54i1zsZ9J91yAYXCm7vfAS9mp-DxzAJNp7wVgK8iPEhvBIhxMXHFvuI5MP0fWF5wNcWtjVZ9g7r5Ue0EphIz3Nu0&amp;t=11e6618b" type="text/javascript"></script>
+<script src="/Portal/ScriptResource.axd?d=SWo6u54_YrDmFn6RKCV4EbmBdBb6aC4maS6x1RTtVzzhfbVz6trPaM9yHHeMdXZ5o8w3tD7zdrPCEMNf1fvDqBvik-CPHtlDdstwpwGkfzvqaLXnxF9GcQ0Fesw1&amp;t=11e6618b" type="text/javascript"></script>
+<script src="/Portal/Modules/Site/Busquedas/ResultadoBusqueda.aspx?_TSM_HiddenField_=ToolkitScriptManager1_HiddenField&amp;_TSM_CombinedScripts_=%3b%3bAjaxControlToolkit%2c+Version%3d3.5.40412.0%2c+Culture%3dneutral%2c+PublicKeyToken%3d28f01b0e84b6d53e%3aes%3a1547e793-5b7e-48fe-8490-03a375b13a33%3a475a4ef5%3aeffe2a26%3a1d3ed089%3a5546a2b%3a497ef277%3aa43b07eb%3a751cdd15%3adfad98a5%3a3cf12cf1" type="text/javascript"></script>
+<script type="text/javascript">
+//<![CDATA[
+Sys.WebForms.PageRequestManager._initialize('ToolkitScriptManager1', 'form1', ['tPanelGeneral',''], [], [], 90, '');
+//]]>
+</script>
+
+    <div id="PanelGeneral">
+	
+         <div align="center"  style="height:88%; position:relative;">        
+             
+                   
+          <table id="tabla1" width="760" border="0" align="center" cellpadding="0" cellspacing="0" style="background-repeat: no-repeat" class="">
+		<tr>
+			<td>
+              <table width="760" border="0" align="center" cellpadding="0" cellspacing="0" >
+                  <tr>
+                    <td align="center" style="height: 73px" >
+                       
+    <link href="Utilidades/styles/estilos.css" rel="stylesheet" type="text/css" />
+   <table width="760" border="0" align="center" cellpadding="0" cellspacing="0"  style="background-repeat: no-repeat">
+       <tr>
+        <td align="center" style="height: 73px" background="Utilidades/images/fondo-sitio.jpg">
+            <img alt="" src="Utilidades/images/vineta_superior_mercadopubl.jpg" width="760" height="73" border="0" usemap="#Map2" />
+            <div id="barraNavegacion">
+            <div class="contenedor2">
+            <ul>
+            <li class="activo"><a href="../../../login.aspx" title="Ir al inicio. Tecla de acceso: 0" accesskey="0" rel="inicio">
+            Inicio</a></li>
+            <li><a href="../../../MP2/secciones/como-vender/como-vender.html" title="Sepa c&oacute;mo hacer negocios con el Estado. Tecla de acceso: 1" accesskey="1" rel="Secci&oacute;n">
+            Cómo vender</a></li>
+            <li><a href="../../../MP2/secciones/capacitacion/capacitacion.html" title="Revise las opciones para capacitarse. Tecla de acceso: 2" accesskey="2" rel="Secci&oacute;n">
+            Capacitación</a></li>
+            <li><a href="../../../MP2/secciones/leyes-y-reglamento/leyes-y-reglamento.html" title="Documentos sobre la Ley de Compras P&uacute;blicas. Tecla de acceso: 3" accesskey="3" rel="Secci&oacute;n">
+            Leyes y reglamento</a></li>
+            <li><a href="../../../MP2/secciones/manuales-y-guias.html" title="Revise los manuales y gu&iacute;as de las aplicaciones. Tecla de acceso: 4" accesskey="4" rel="Secci&oacute;n">
+            Manuales y guías</a></li>
+            <li><a href="../../../MP2/secciones/aplicaciones/aplicacion.html" title="Descargue las aplicaciones de MercadoPublico.cl. Tecla de acceso: D" accesskey="D" rel="Secci&oacute;n">
+            Aplicaciones</a></li>
+            </ul>
+            </div> <!--finContenedor-->
+            </div> <!--finBarraNavegación-->
+        </td>
+    </tr>
+</table>
+                    
+                    
+
+      
+                    </td>
+                </tr>
+                <tr>
+                   <td background="Utilidades/images/fondo-sitio.jpg">
+                      <table width="740" border="0" align="center" cellpadding="0" cellspacing="0" style="background-repeat: no-repeat">
+                       <tr>
+                         <td >
+                                <div>
+        <div class="contError" id="divGeneralError" style="display: none">
+        </div>
+        <table id="tblSearchButton" style="width: 100%">
+				<tr>
+					<td colspan="2" height="10"><span class="cssTextNavegation">Estás en:</span> &nbsp;<a id="lnkReturn" class="cssNavegation" href="../../../login.aspx">Página de Inicio</a><span class="cssSymbolNavigation">> </span>
+                    <a id="lnkBusqueda" class="cssNavegation" href="BuscadorAvanzado.aspx?qs=1">Búsqueda de Licitaciones</a><span class="cssSymbolNavigation"> > </span>
+                    <a id="lnkResultado" class="cssNavegation" href="ResultadoBusqueda.aspx?qs=1">Resultado de licitaciones</a></td>
+				</tr>
+				<tr>
+					<td colspan="2" height="10" align="right">
+                    <a id="lnkBusquedaLicitaciones" class="cssNavegation" href="BuscadorAvanzado.aspx?qs=3">Búsqueda de Contratos</a>
+                    <span id="symbolTop" class="cssSymbolNavigation">|</span><a id="lnkBusquedaOC" class="cssNavegation" href="BuscadorAvanzado.aspx?qs=2">Buscar Órdenes de Compra</a></td>
+				</tr>
+				<tr style="width: 100%">
+					<td colspan="2">
+                    <span id="lblSubTitle" class="cssSubTitle">Resultado de licitaciones</span> 
+                </td>
+				</tr>
+				<tr>
+					<td colspan="2">
+                <table style="width:100%;">
+                    <tr>
+                        <td class="BusquedaRealizada" width="60%">
+                            <span id="lblBusqueda" class="cssCountSearch"><u>Búsqueda Realizada: </u> &nbsp;&nbsp;Licitaciones Por Comprador: <b>I.MUNICIPALIDAD DE PEÑALOLEN</b>&nbsp;Por Region: <b>Todas las Regiones</b>&nbsp;Por Estado: <b>Adjudicada</b>&nbsp;Por Fecha <b>Fecha Publicación: 01-01-2012 al 26-06-2012</b></span>
+                        </td>
+                        <td align="right" width="40%">
+                            <span id="lblTiempoBusqueda" class="cssCountSearch">Duración : <b>0,1 segundos</b><br></span>
+                            <br />
+                        <a id="lnkListar" href="javascript:__doPostBack(&#39;lnkListar&#39;,&#39;&#39;)">Ver resultados como lista</a>
+  
+                            
+  
+                        </td>
+                    </tr>
+                </table>
+                </td>
+				</tr>
+			</table>
+			
+        <div id="pnlSearch1" width="100%">
+             
+                     <table width="100%" border="0" cellpadding="0" cellspacing="0">
+                        <tr class="cssGridAdvancedResult">
+                            <th id="rptResultados_ctl00_th1" valign="top" align="center" width="100px">
+                                   <a id="rptResultados_ctl00_lblCodigo" class="cssResultDate" href="javascript:__doPostBack(&#39;rptResultados$ctl00$lblCodigo&#39;,&#39;&#39;)">Número</a>
+                                    <img id="rptResultados_ctl00_imgOrdenar1" src="Utilidades/images/sinImagen.png" style="width:10px;border-width:0px;" />
+                            </th>
+			
+                            <th id="rptResultados_ctl00_th2" valign="top" width="250px">
+                                <a id="rptResultados_ctl00_lblNombre" class="cssResultDate" href="javascript:__doPostBack(&#39;rptResultados$ctl00$lblNombre&#39;,&#39;&#39;)">Nombre de la Licitación</a>
+                                <img id="rptResultados_ctl00_imgOrdenar2" src="Utilidades/images/sinImagen.png" style="width:10px;border-width:0px;" />
+                            </th>
+			
+                            <th id="rptResultados_ctl00_th3" valign="top" align="center" width="210px">
+                                <a id="rptResultados_ctl00_lblComprador" class="cssResultDate" href="javascript:__doPostBack(&#39;rptResultados$ctl00$lblComprador&#39;,&#39;&#39;)">Comprador</a>
+                                 <img id="rptResultados_ctl00_imgOrdenar3" src="Utilidades/images/sinImagen.png" style="width:10px;border-width:0px;" />
+                            </th>
+			
+                            
+                            <th id="rptResultados_ctl00_th5" valign="top" align="center" width="100px">
+                                <a id="rptResultados_ctl00_lblFecha" class="cssResultDate" href="javascript:__doPostBack(&#39;rptResultados$ctl00$lblFecha&#39;,&#39;&#39;)">Fecha Cierre</a>
+                                <img id="rptResultados_ctl00_imgOrdenar5" src="Utilidades/images/sinImagen.png" style="width:10px;border-width:0px;" />
+                            </th>
+			
+                            <th id="rptResultados_ctl00_th6" valign="top" align="center" width="100px">
+                                <a id="rptResultados_ctl00_lblEstado" class="cssResultDate" href="javascript:__doPostBack(&#39;rptResultados$ctl00$lblEstado&#39;,&#39;&#39;)">Estado</a>
+                                <img id="rptResultados_ctl00_imgOrdenar6" src="Utilidades/images/sinImagen.png" style="width:10px;border-width:0px;" />
+                            </th>
+			
+                            <th id="rptResultados_ctl00_th7" valign="top" align="center" width="0px">
+                                <span id="rptResultados_ctl00_lblVerMas" class="cssResultDate">Ver más</span>
+                            </th>
+			
+                        </tr>
+                
+                        <tr class="cssGridAdvancedSearch">
+                        <td id="rptResultados_ctl01_td1" align="center" valign="middle" class="cssGridAdvancedSearch" width="100px">
+                            &nbsp;<a onclick="javascript:window.open(&#39;../../../../Procurement/Modules/RFB/DetailsAcquisition.aspx?qs=QKorP31j/nsgwxoHwBbGl9lMfdRUyKwrI1O7tP16jGZl24r35ZO4Y1c1p8Fj2++3&#39;,&#39;Detail&#39;,&#39;width=700,height=400, status=yes, scrollbars=yes, left=0, top=0, resizable=yes&#39;);event.returnValue=false;" id="rptResultados_ctl01_lnkCodigo" class="cssLinkButton" href="javascript:__doPostBack(&#39;rptResultados$ctl01$lnkCodigo&#39;,&#39;&#39;)">2403-190-L112</a>
+                                  
+                        </td>
+			
+                        <td id="rptResultados_ctl01_td2" valign="middle" class="cssGridAdvancedSearch" width="250px">
+                                <span id="rptResultados_ctl01_lblNombre">MANGAS DE POLIETILENO SMUE 69969</span>
+                       </td>
+			
+                       <td id="rptResultados_ctl01_td3" valign="middle" align="center" class="cssGridAdvancedSearch" width="210px">
+                            
+                            <a onclick="javascript:AbrirVentana(&#39;3395&#39;);" id="rptResultados_ctl01_lnkNombreComprador" class="cssLinkButton" href="javascript:__doPostBack(&#39;rptResultados$ctl01$lnkNombreComprador&#39;,&#39;&#39;)">I.MUNICIPALIDAD DE PEÑALOLEN</a>
+                        </td>
+			
+                         
+                        <td id="rptResultados_ctl01_td5" valign="middle" align="center" class="cssGridAdvancedSearch" width="100px">
+                            &nbsp;<span id="rptResultados_ctl01_lblFecha">06-06-2012 14:51:00</span>
+                        </td>
+			
+                        <td id="rptResultados_ctl01_td6" valign="middle" align="center" class="cssGridAdvancedSearch" width="100px">
+                            &nbsp;<span id="rptResultados_ctl01_lblEstado">Adjudicada</span>
+                        </td>
+			
+                        <td id="rptResultados_ctl01_td7" valign="middle" class="cssGridAdvancedSearch" style="width:10%;" align="center">
+                        <input type="image" name="rptResultados$ctl01$BotonInformacion" id="rptResultados_ctl01_BotonInformacion" title="Ver Información" src="Utilidades/images/mas2.png" onclick="javascript:TablaResultado(&#39;2403-190-L112&#39;,&#39;MANGAS DE POLIETILENO SMUE 69969&#39;,&#39;MANGAS DE POLIETILENO PARA STOCK DE EMERGENCIA&#39;);" style="height:30px;width:30px;border-width:0px;" /> 
+                            
+                        </td>
+			
+                    </tr>
+                
+                    <tr class="cssGridAdvancedSearchAlter">
+                       <td id="rptResultados_ctl02_td1" align="center" valign="middle" width="100px">
+                            &nbsp;<a onclick="javascript:window.open(&#39;../../../../Procurement/Modules/RFB/DetailsAcquisition.aspx?qs=QSrc97skGl/EB/ZqXLUew7mA6Zvlc6ADgngkctTR0hc38TJw9ZQBzHqcPhJXSiQG&#39;,&#39;Detail&#39;,&#39;width=700,height=400, status=yes, scrollbars=yes, left=0, top=0, resizable=yes&#39;);event.returnValue=false;" id="rptResultados_ctl02_lnkCodigo" class="cssLinkButton" href="javascript:__doPostBack(&#39;rptResultados$ctl02$lnkCodigo&#39;,&#39;&#39;)">2403-181-L112</a>
+                                  
+                        </td>
+			
+                        <td id="rptResultados_ctl02_td2" valign="middle" width="250px">
+                                <span id="rptResultados_ctl02_lblNombre">ADQUISICION DE CAJAS DE SEGURIDAD SMUE 69664</span>
+                        </td>
+			
+                        <td id="rptResultados_ctl02_td3" valign="middle" align="center" width="210px">
+                            
+                            <a onclick="javascript:AbrirVentana(&#39;3395&#39;);" id="rptResultados_ctl02_lnkNombreComprador" class="cssLinkButton" href="javascript:__doPostBack(&#39;rptResultados$ctl02$lnkNombreComprador&#39;,&#39;&#39;)">I.MUNICIPALIDAD DE PEÑALOLEN</a>
+                        </td>
+			
+                         
+                        <td id="rptResultados_ctl02_td5" valign="middle" align="center" width="100px">
+                            &nbsp;<span id="rptResultados_ctl02_lblFecha">05-06-2012 15:03:00</span>
+                        </td>
+			
+                        <td id="rptResultados_ctl02_td6" valign="middle" align="center" width="100px">
+                            &nbsp;<span id="rptResultados_ctl02_lblEstado">Adjudicada</span>
+                        </td>
+			
+                         <td id="rptResultados_ctl02_td7" valign="middle" align="center">
+                            <input type="image" name="rptResultados$ctl02$BotonInformacion" id="rptResultados_ctl02_BotonInformacion" title="Ver Información" src="Utilidades/images/mas2.png" onclick="javascript:TablaResultado(&#39;2403-181-L112&#39;,&#39;ADQUISICION DE CAJAS DE SEGURIDAD SMUE 69664&#39;,&#39;NECESIDAD DE RESGUARDO DE DINEROS EN CAJAS DE SEGURIDADEN DISTINTAS DEPENDENCIAS.&#39;);" style="height:30px;width:30px;border-width:0px;" /> 
+                            
+                        </td>
+			
+                    </tr>
+                
+                        <tr class="cssGridAdvancedSearch">
+                        <td id="rptResultados_ctl03_td1" align="center" valign="middle" class="cssGridAdvancedSearch" width="100px">
+                            &nbsp;<a onclick="javascript:window.open(&#39;../../../../Procurement/Modules/RFB/DetailsAcquisition.aspx?qs=Nc7z4pOsuMKWqCaLfqahMOGxAgR2C7FmTVU7m29EfNOjm5viSHeY+lr7hFH1JEnf&#39;,&#39;Detail&#39;,&#39;width=700,height=400, status=yes, scrollbars=yes, left=0, top=0, resizable=yes&#39;);event.returnValue=false;" id="rptResultados_ctl03_lnkCodigo" class="cssLinkButton" href="javascript:__doPostBack(&#39;rptResultados$ctl03$lnkCodigo&#39;,&#39;&#39;)">2403-186-L112</a>
+                                  
+                        </td>
+			
+                        <td id="rptResultados_ctl03_td2" valign="middle" class="cssGridAdvancedSearch" width="250px">
+                                <span id="rptResultados_ctl03_lblNombre">SERVICIO DE ARRIENDO DE FURGON COMO OFICINA MOVIL</span>
+                       </td>
+			
+                       <td id="rptResultados_ctl03_td3" valign="middle" align="center" class="cssGridAdvancedSearch" width="210px">
+                            
+                            <a onclick="javascript:AbrirVentana(&#39;3395&#39;);" id="rptResultados_ctl03_lnkNombreComprador" class="cssLinkButton" href="javascript:__doPostBack(&#39;rptResultados$ctl03$lnkNombreComprador&#39;,&#39;&#39;)">I.MUNICIPALIDAD DE PEÑALOLEN</a>
+                        </td>
+			
+                         
+                        <td id="rptResultados_ctl03_td5" valign="middle" align="center" class="cssGridAdvancedSearch" width="100px">
+                            &nbsp;<span id="rptResultados_ctl03_lblFecha">05-06-2012 12:00:00</span>
+                        </td>
+			
+                        <td id="rptResultados_ctl03_td6" valign="middle" align="center" class="cssGridAdvancedSearch" width="100px">
+                            &nbsp;<span id="rptResultados_ctl03_lblEstado">Adjudicada</span>
+                        </td>
+			
+                        <td id="rptResultados_ctl03_td7" valign="middle" class="cssGridAdvancedSearch" style="width:10%;" align="center">
+                        <input type="image" name="rptResultados$ctl03$BotonInformacion" id="rptResultados_ctl03_BotonInformacion" title="Ver Información" src="Utilidades/images/mas2.png" onclick="javascript:TablaResultado(&#39;2403-186-L112&#39;,&#39;SERVICIO DE ARRIENDO DE FURGON COMO OFICINA MOVIL&#39;,&#39;PROGRAMA VIDA NUEVA, DE SEGURIDAD CIUDADANA-&#39;);" style="height:30px;width:30px;border-width:0px;" /> 
+                            
+                        </td>
+			
+                    </tr>
+                
+                    <tr class="cssGridAdvancedSearchAlter">
+                       <td id="rptResultados_ctl04_td1" align="center" valign="middle" width="100px">
+                            &nbsp;<a onclick="javascript:window.open(&#39;../../../../Procurement/Modules/RFB/DetailsAcquisition.aspx?qs=uvJLn7RzELIpE6YC9sClopfZTiL1h7Pv0w+XSJlBoQFosY5PN6m6HDoRc/wriA2S&#39;,&#39;Detail&#39;,&#39;width=700,height=400, status=yes, scrollbars=yes, left=0, top=0, resizable=yes&#39;);event.returnValue=false;" id="rptResultados_ctl04_lnkCodigo" class="cssLinkButton" href="javascript:__doPostBack(&#39;rptResultados$ctl04$lnkCodigo&#39;,&#39;&#39;)">2403-188-L112</a>
+                                  
+                        </td>
+			
+                        <td id="rptResultados_ctl04_td2" valign="middle" width="250px">
+                                <span id="rptResultados_ctl04_lblNombre">COMPRA DE LCD DE 32 PULGADAS.</span>
+                        </td>
+			
+                        <td id="rptResultados_ctl04_td3" valign="middle" align="center" width="210px">
+                            
+                            <a onclick="javascript:AbrirVentana(&#39;3395&#39;);" id="rptResultados_ctl04_lnkNombreComprador" class="cssLinkButton" href="javascript:__doPostBack(&#39;rptResultados$ctl04$lnkNombreComprador&#39;,&#39;&#39;)">I.MUNICIPALIDAD DE PEÑALOLEN</a>
+                        </td>
+			
+                         
+                        <td id="rptResultados_ctl04_td5" valign="middle" align="center" width="100px">
+                            &nbsp;<span id="rptResultados_ctl04_lblFecha">05-06-2012 10:00:00</span>
+                        </td>
+			
+                        <td id="rptResultados_ctl04_td6" valign="middle" align="center" width="100px">
+                            &nbsp;<span id="rptResultados_ctl04_lblEstado">Adjudicada</span>
+                        </td>
+			
+                         <td id="rptResultados_ctl04_td7" valign="middle" align="center">
+                            <input type="image" name="rptResultados$ctl04$BotonInformacion" id="rptResultados_ctl04_BotonInformacion" title="Ver Información" src="Utilidades/images/mas2.png" onclick="javascript:TablaResultado(&#39;2403-188-L112&#39;,&#39;COMPRA DE LCD DE 32 PULGADAS.&#39;,&#39;COMPRA DE ACTIVO NO FINANCIERO PROGRAMA BADALUNA.&#39;);" style="height:30px;width:30px;border-width:0px;" /> 
+                            
+                        </td>
+			
+                    </tr>
+                
+                        <tr class="cssGridAdvancedSearch">
+                        <td id="rptResultados_ctl05_td1" align="center" valign="middle" class="cssGridAdvancedSearch" width="100px">
+                            &nbsp;<a onclick="javascript:window.open(&#39;../../../../Procurement/Modules/RFB/DetailsAcquisition.aspx?qs=RLiyGhKbqnKPKUoaeVtlum8oizQKjC5dHCKSlITBn6Ox8Del49RrMeE1lvpWqWYH&#39;,&#39;Detail&#39;,&#39;width=700,height=400, status=yes, scrollbars=yes, left=0, top=0, resizable=yes&#39;);event.returnValue=false;" id="rptResultados_ctl05_lnkCodigo" class="cssLinkButton" href="javascript:__doPostBack(&#39;rptResultados$ctl05$lnkCodigo&#39;,&#39;&#39;)">2403-165-LE12</a>
+                                  
+                        </td>
+			
+                        <td id="rptResultados_ctl05_td2" valign="middle" class="cssGridAdvancedSearch" width="250px">
+                                <span id="rptResultados_ctl05_lblNombre">MAQUINAS Y HERRAMIENTAS  SMUE 69285</span>
+                       </td>
+			
+                       <td id="rptResultados_ctl05_td3" valign="middle" align="center" class="cssGridAdvancedSearch" width="210px">
+                            
+                            <a onclick="javascript:AbrirVentana(&#39;3395&#39;);" id="rptResultados_ctl05_lnkNombreComprador" class="cssLinkButton" href="javascript:__doPostBack(&#39;rptResultados$ctl05$lnkNombreComprador&#39;,&#39;&#39;)">I.MUNICIPALIDAD DE PEÑALOLEN</a>
+                        </td>
+			
+                         
+                        <td id="rptResultados_ctl05_td5" valign="middle" align="center" class="cssGridAdvancedSearch" width="100px">
+                            &nbsp;<span id="rptResultados_ctl05_lblFecha">24-05-2012 13:22:00</span>
+                        </td>
+			
+                        <td id="rptResultados_ctl05_td6" valign="middle" align="center" class="cssGridAdvancedSearch" width="100px">
+                            &nbsp;<span id="rptResultados_ctl05_lblEstado">Adjudicada</span>
+                        </td>
+			
+                        <td id="rptResultados_ctl05_td7" valign="middle" class="cssGridAdvancedSearch" style="width:10%;" align="center">
+                        <input type="image" name="rptResultados$ctl05$BotonInformacion" id="rptResultados_ctl05_BotonInformacion" title="Ver Información" src="Utilidades/images/mas2.png" onclick="javascript:TablaResultado(&#39;2403-165-LE12&#39;,&#39;MAQUINAS Y HERRAMIENTAS  SMUE 69285&#39;,&#39;PREVENCION Y EJECUCION DE TRABAJOS DE EMERGENCIA Y LLUVIAS&#39;);" style="height:30px;width:30px;border-width:0px;" /> 
+                            
+                        </td>
+			
+                    </tr>
+                
+                    <tr class="cssGridAdvancedSearchAlter">
+                       <td id="rptResultados_ctl06_td1" align="center" valign="middle" width="100px">
+                            &nbsp;<a onclick="javascript:window.open(&#39;../../../../Procurement/Modules/RFB/DetailsAcquisition.aspx?qs=Z00+idE/sYkY+oovaBOxo4INVOvT596hN0M9s0ARXv3m7THl82ajWzDBAta9CZye&#39;,&#39;Detail&#39;,&#39;width=700,height=400, status=yes, scrollbars=yes, left=0, top=0, resizable=yes&#39;);event.returnValue=false;" id="rptResultados_ctl06_lnkCodigo" class="cssLinkButton" href="javascript:__doPostBack(&#39;rptResultados$ctl06$lnkCodigo&#39;,&#39;&#39;)">2403-168-L112</a>
+                                  
+                        </td>
+			
+                        <td id="rptResultados_ctl06_td2" valign="middle" width="250px">
+                                <span id="rptResultados_ctl06_lblNombre">ENTRADAS PARA PARQUE RECREATIVO SMUE 69491</span>
+                        </td>
+			
+                        <td id="rptResultados_ctl06_td3" valign="middle" align="center" width="210px">
+                            
+                            <a onclick="javascript:AbrirVentana(&#39;3395&#39;);" id="rptResultados_ctl06_lnkNombreComprador" class="cssLinkButton" href="javascript:__doPostBack(&#39;rptResultados$ctl06$lnkNombreComprador&#39;,&#39;&#39;)">I.MUNICIPALIDAD DE PEÑALOLEN</a>
+                        </td>
+			
+                         
+                        <td id="rptResultados_ctl06_td5" valign="middle" align="center" width="100px">
+                            &nbsp;<span id="rptResultados_ctl06_lblFecha">22-05-2012 15:14:00</span>
+                        </td>
+			
+                        <td id="rptResultados_ctl06_td6" valign="middle" align="center" width="100px">
+                            &nbsp;<span id="rptResultados_ctl06_lblEstado">Adjudicada</span>
+                        </td>
+			
+                         <td id="rptResultados_ctl06_td7" valign="middle" align="center">
+                            <input type="image" name="rptResultados$ctl06$BotonInformacion" id="rptResultados_ctl06_BotonInformacion" title="Ver Información" src="Utilidades/images/mas2.png" onclick="javascript:TablaResultado(&#39;2403-168-L112&#39;,&#39;ENTRADAS PARA PARQUE RECREATIVO SMUE 69491&#39;,&#39;COMPRA DE ENTRADAS PARA PARQUE RECREATIVO PROGRAMA VINCULOS ADULTO MAYOR&#39;);" style="height:30px;width:30px;border-width:0px;" /> 
+                            
+                        </td>
+			
+                    </tr>
+                
+                        <tr class="cssGridAdvancedSearch">
+                        <td id="rptResultados_ctl07_td1" align="center" valign="middle" class="cssGridAdvancedSearch" width="100px">
+                            &nbsp;<a onclick="javascript:window.open(&#39;../../../../Procurement/Modules/RFB/DetailsAcquisition.aspx?qs=0p9qh1yNBx5mL/dQa2BsDzvQRjouXNv9ZNNs5kD8u2Gttj4P/els4tQd4c1Jq4gV&#39;,&#39;Detail&#39;,&#39;width=700,height=400, status=yes, scrollbars=yes, left=0, top=0, resizable=yes&#39;);event.returnValue=false;" id="rptResultados_ctl07_lnkCodigo" class="cssLinkButton" href="javascript:__doPostBack(&#39;rptResultados$ctl07$lnkCodigo&#39;,&#39;&#39;)">2403-161-L112</a>
+                                  
+                        </td>
+			
+                        <td id="rptResultados_ctl07_td2" valign="middle" class="cssGridAdvancedSearch" width="250px">
+                                <span id="rptResultados_ctl07_lblNombre">LIMPIEZA DE CANALETAS , Y OTROS SMUE 69482</span>
+                       </td>
+			
+                       <td id="rptResultados_ctl07_td3" valign="middle" align="center" class="cssGridAdvancedSearch" width="210px">
+                            
+                            <a onclick="javascript:AbrirVentana(&#39;3395&#39;);" id="rptResultados_ctl07_lnkNombreComprador" class="cssLinkButton" href="javascript:__doPostBack(&#39;rptResultados$ctl07$lnkNombreComprador&#39;,&#39;&#39;)">I.MUNICIPALIDAD DE PEÑALOLEN</a>
+                        </td>
+			
+                         
+                        <td id="rptResultados_ctl07_td5" valign="middle" align="center" class="cssGridAdvancedSearch" width="100px">
+                            &nbsp;<span id="rptResultados_ctl07_lblFecha">15-05-2012 15:39:00</span>
+                        </td>
+			
+                        <td id="rptResultados_ctl07_td6" valign="middle" align="center" class="cssGridAdvancedSearch" width="100px">
+                            &nbsp;<span id="rptResultados_ctl07_lblEstado">Adjudicada</span>
+                        </td>
+			
+                        <td id="rptResultados_ctl07_td7" valign="middle" class="cssGridAdvancedSearch" style="width:10%;" align="center">
+                        <input type="image" name="rptResultados$ctl07$BotonInformacion" id="rptResultados_ctl07_BotonInformacion" title="Ver Información" src="Utilidades/images/mas2.png" onclick="javascript:TablaResultado(&#39;2403-161-L112&#39;,&#39;LIMPIEZA DE CANALETAS , Y OTROS SMUE 69482&#39;,&#39;MANTENCION DE EDIFICIO CONSISTORIAL -YUNUS Y CAM&#39;);" style="height:30px;width:30px;border-width:0px;" /> 
+                            
+                        </td>
+			
+                    </tr>
+                
+                    <tr class="cssGridAdvancedSearchAlter">
+                       <td id="rptResultados_ctl08_td1" align="center" valign="middle" width="100px">
+                            &nbsp;<a onclick="javascript:window.open(&#39;../../../../Procurement/Modules/RFB/DetailsAcquisition.aspx?qs=bvqW2iE1WzTjGsLz400TAXMERVUK55gT8fThcKcU7BKm8/NSM9q6Yy8oVK6B6C8Z&#39;,&#39;Detail&#39;,&#39;width=700,height=400, status=yes, scrollbars=yes, left=0, top=0, resizable=yes&#39;);event.returnValue=false;" id="rptResultados_ctl08_lnkCodigo" class="cssLinkButton" href="javascript:__doPostBack(&#39;rptResultados$ctl08$lnkCodigo&#39;,&#39;&#39;)">2403-163-L112</a>
+                                  
+                        </td>
+			
+                        <td id="rptResultados_ctl08_td2" valign="middle" width="250px">
+                                <span id="rptResultados_ctl08_lblNombre">ARTICULOS ELECTRICOS SMUE 69192</span>
+                        </td>
+			
+                        <td id="rptResultados_ctl08_td3" valign="middle" align="center" width="210px">
+                            
+                            <a onclick="javascript:AbrirVentana(&#39;3395&#39;);" id="rptResultados_ctl08_lnkNombreComprador" class="cssLinkButton" href="javascript:__doPostBack(&#39;rptResultados$ctl08$lnkNombreComprador&#39;,&#39;&#39;)">I.MUNICIPALIDAD DE PEÑALOLEN</a>
+                        </td>
+			
+                         
+                        <td id="rptResultados_ctl08_td5" valign="middle" align="center" width="100px">
+                            &nbsp;<span id="rptResultados_ctl08_lblFecha">15-05-2012 14:09:00</span>
+                        </td>
+			
+                        <td id="rptResultados_ctl08_td6" valign="middle" align="center" width="100px">
+                            &nbsp;<span id="rptResultados_ctl08_lblEstado">Adjudicada</span>
+                        </td>
+			
+                         <td id="rptResultados_ctl08_td7" valign="middle" align="center">
+                            <input type="image" name="rptResultados$ctl08$BotonInformacion" id="rptResultados_ctl08_BotonInformacion" title="Ver Información" src="Utilidades/images/mas2.png" onclick="javascript:TablaResultado(&#39;2403-163-L112&#39;,&#39;ARTICULOS ELECTRICOS SMUE 69192&#39;,&#39;MATERIAL PARA RECINTO COMUNITARIO U.V N°28&#39;);" style="height:30px;width:30px;border-width:0px;" /> 
+                            
+                        </td>
+			
+                    </tr>
+                
+                        <tr class="cssGridAdvancedSearch">
+                        <td id="rptResultados_ctl09_td1" align="center" valign="middle" class="cssGridAdvancedSearch" width="100px">
+                            &nbsp;<a onclick="javascript:window.open(&#39;../../../../Procurement/Modules/RFB/DetailsAcquisition.aspx?qs=a4G1uaWvP4nm9fTQK5J0XxfWIkHZgDSnnE9j/RMZ4Tika0U6Elbk9ZpvOEzhVBQd&#39;,&#39;Detail&#39;,&#39;width=700,height=400, status=yes, scrollbars=yes, left=0, top=0, resizable=yes&#39;);event.returnValue=false;" id="rptResultados_ctl09_lnkCodigo" class="cssLinkButton" href="javascript:__doPostBack(&#39;rptResultados$ctl09$lnkCodigo&#39;,&#39;&#39;)">2403-160-L112</a>
+                                  
+                        </td>
+			
+                        <td id="rptResultados_ctl09_td2" valign="middle" class="cssGridAdvancedSearch" width="250px">
+                                <span id="rptResultados_ctl09_lblNombre">COMPRA DE EQUIPO DE GRABACION Y OTROS-</span>
+                       </td>
+			
+                       <td id="rptResultados_ctl09_td3" valign="middle" align="center" class="cssGridAdvancedSearch" width="210px">
+                            
+                            <a onclick="javascript:AbrirVentana(&#39;3395&#39;);" id="rptResultados_ctl09_lnkNombreComprador" class="cssLinkButton" href="javascript:__doPostBack(&#39;rptResultados$ctl09$lnkNombreComprador&#39;,&#39;&#39;)">I.MUNICIPALIDAD DE PEÑALOLEN</a>
+                        </td>
+			
+                         
+                        <td id="rptResultados_ctl09_td5" valign="middle" align="center" class="cssGridAdvancedSearch" width="100px">
+                            &nbsp;<span id="rptResultados_ctl09_lblFecha">14-05-2012 18:02:00</span>
+                        </td>
+			
+                        <td id="rptResultados_ctl09_td6" valign="middle" align="center" class="cssGridAdvancedSearch" width="100px">
+                            &nbsp;<span id="rptResultados_ctl09_lblEstado">Adjudicada</span>
+                        </td>
+			
+                        <td id="rptResultados_ctl09_td7" valign="middle" class="cssGridAdvancedSearch" style="width:10%;" align="center">
+                        <input type="image" name="rptResultados$ctl09$BotonInformacion" id="rptResultados_ctl09_BotonInformacion" title="Ver Información" src="Utilidades/images/mas2.png" onclick="javascript:TablaResultado(&#39;2403-160-L112&#39;,&#39;COMPRA DE EQUIPO DE GRABACION Y OTROS-&#39;,&#39;NECESIDADES DE DIRECCION DE COMUNICACIONES&#39;);" style="height:30px;width:30px;border-width:0px;" /> 
+                            
+                        </td>
+			
+                    </tr>
+                
+                    <tr class="cssGridAdvancedSearchAlter">
+                       <td id="rptResultados_ctl10_td1" align="center" valign="middle" width="100px">
+                            &nbsp;<a onclick="javascript:window.open(&#39;../../../../Procurement/Modules/RFB/DetailsAcquisition.aspx?qs=K3gx83UlnYVUqzvlvqXnTf8OLCJkf1scJjYphaFqtpLhURxmBKkF6Kr1imb9NIdL&#39;,&#39;Detail&#39;,&#39;width=700,height=400, status=yes, scrollbars=yes, left=0, top=0, resizable=yes&#39;);event.returnValue=false;" id="rptResultados_ctl10_lnkCodigo" class="cssLinkButton" href="javascript:__doPostBack(&#39;rptResultados$ctl10$lnkCodigo&#39;,&#39;&#39;)">2403-155-L112</a>
+                                  
+                        </td>
+			
+                        <td id="rptResultados_ctl10_td2" valign="middle" width="250px">
+                                <span id="rptResultados_ctl10_lblNombre">BOLSAS PLASTICAS SMUE 68311</span>
+                        </td>
+			
+                        <td id="rptResultados_ctl10_td3" valign="middle" align="center" width="210px">
+                            
+                            <a onclick="javascript:AbrirVentana(&#39;3395&#39;);" id="rptResultados_ctl10_lnkNombreComprador" class="cssLinkButton" href="javascript:__doPostBack(&#39;rptResultados$ctl10$lnkNombreComprador&#39;,&#39;&#39;)">I.MUNICIPALIDAD DE PEÑALOLEN</a>
+                        </td>
+			
+                         
+                        <td id="rptResultados_ctl10_td5" valign="middle" align="center" width="100px">
+                            &nbsp;<span id="rptResultados_ctl10_lblFecha">10-05-2012 12:26:00</span>
+                        </td>
+			
+                        <td id="rptResultados_ctl10_td6" valign="middle" align="center" width="100px">
+                            &nbsp;<span id="rptResultados_ctl10_lblEstado">Adjudicada</span>
+                        </td>
+			
+                         <td id="rptResultados_ctl10_td7" valign="middle" align="center">
+                            <input type="image" name="rptResultados$ctl10$BotonInformacion" id="rptResultados_ctl10_BotonInformacion" title="Ver Información" src="Utilidades/images/mas2.png" onclick="javascript:TablaResultado(&#39;2403-155-L112&#39;,&#39;BOLSAS PLASTICAS SMUE 68311&#39;,&#39;COMPRA DE BOLSAS PLASTICAS SMUE 68311 PARA DESPACHO DE INSUMOS DE BODEGA.&#39;);" style="height:30px;width:30px;border-width:0px;" /> 
+                            
+                        </td>
+			
+                    </tr>
+                
+                    </table>
+                
+            
+                <br />
+            
+<script type="text/javascript" src="Utilidades/scripts/AdvancedSearchFunctions.js" ></script>
+<style type="text/css">@import url(../../../Includes/styles/AdvancedSearchPortal.css);</style>
+<script language="javascript" type="text/javascript">
+    function fnMovePage(intIndex,objId) {
+        //      debugger;
+        MostrarEspera();
+        objId = objId + '$btn_GoToPage';
+        __doPostBack(objId,intIndex);
+    }
+    
+</script>
+
+<input name="PaginadorBusqueda$hidIndex" type="hidden" id="PaginadorBusqueda_hidIndex" value="0" />
+<input name="PaginadorBusqueda$hidCountRows" type="hidden" id="PaginadorBusqueda_hidCountRows" value="113" />
+<input name="PaginadorBusqueda$hidMaxRowCount" type="hidden" id="PaginadorBusqueda_hidMaxRowCount" value="10" />
+<table id="PaginadorBusqueda__TblPages" class="cssPager" width="100%">
+				<tr align="left">
+					<td width="8%"><div ></div></td>
+					<td width="3%"><div >1</div></td>
+					<td width="3%"><div style='cursor:hand;text-decoration: underline;' onclick='javascript:fnMovePage(2,"PaginadorBusqueda");'>2</div></td>
+					<td width="3%"><div style='cursor:hand;text-decoration: underline;' onclick='javascript:fnMovePage(3,"PaginadorBusqueda");'>3</div></td>
+					<td width="3%"><div style='cursor:hand;text-decoration: underline;' onclick='javascript:fnMovePage(4,"PaginadorBusqueda");'>4</div></td>
+					<td width="3%"><div style='cursor:hand;text-decoration: underline;' onclick='javascript:fnMovePage(5,"PaginadorBusqueda");'>5</div></td>
+					<td width="3%"><div style='cursor:hand;text-decoration: underline;' onclick='javascript:fnMovePage(6,"PaginadorBusqueda");'>6</div></td>
+					<td width="3%"><div style='cursor:hand;text-decoration: underline;' onclick='javascript:fnMovePage(7,"PaginadorBusqueda");'>7</div></td>
+					<td width="3%"><div style='cursor:hand;text-decoration: underline;' onclick='javascript:fnMovePage(8,"PaginadorBusqueda");'>8</div></td>
+					<td width="3%"><div style='cursor:hand;text-decoration: underline;' onclick='javascript:fnMovePage(9,"PaginadorBusqueda");'>9</div></td>
+					<td width="3%"><div style='cursor:hand;text-decoration: underline;' onclick='javascript:fnMovePage(10,"PaginadorBusqueda");'>10</div></td>
+					<td width="8%"><div style='cursor:hand;text-align:left' onclick='javascript:fnMovePage(11,"PaginadorBusqueda");'>>>  Siguiente</div></td>
+					<td></td>
+				</tr>
+			</table>
+			
+
+
+     </div>
+        <table id="Table1" style="width: 100%">
+				<tr>
+					<td colspan="2"></td>
+				</tr>
+				<tr>
+					<td>&nbsp;</td>
+					<td align="right">
+                    <input type="image" name="ImageButton1" id="ImageButton1" src="Utilidades/images/botonVolver.jpg" onclick="javascript:top.location=&#39;BuscadorAvanzado.aspx?qs=1&#39;;return false;" style="border-width:0px;" />
+                </td>
+				</tr>
+				<tr>
+					<td align="left"><a onclick="javascript:window.open(&#39;GrillaExcel.aspx?qs=NZDWnDeeVQMmNXII3QIYkQ==&#39;,&#39;Excel&#39;,&#39;width=0,height=0, status=yes, scrollbars=yes, left=0, top=0, resizable=yes&#39;);event.returnValue=false;" id="_LbtBottomDownloadExcel" class="cssNavegation" href="javascript:__doPostBack(&#39;_LbtBottomDownloadExcel&#39;,&#39;&#39;)">Descargue los resultados de la búsqueda (Excel)</a></td>
+					<td align="right">&nbsp;</td>
+				</tr>
+			</table>
+			
+
+    </div>
+                       </td>
+                      </tr>
+                  </table>
+    <div id="PanelOrganismo" class="ui-widget-content" style="border-style:Double;width:550px;">
+				
+    <table width="100%"  cellpadding="0" cellspacing="0">
+       <tr>
+           <td >
+            <table cellpadding="0" cellspacing="0">
+            <tr>
+            <td align="left">
+                <img id="imgFront" src="Utilidades/images/cabezal.jpg" style="border-width:0px;" />
+             </td>
+             <td id="tdRSS">
+                          <span id="CanalRSS" class="adquisicionOfertaBodyCeldaOff">Suscribase a las oportunidades de negocio de esta unidad de compra&#160;</span><img alt="Icono suscripcion RSS" src="../../Includes/images/Feed_Chico.gif" 
+                              style="width: 12px; height: 12px" />
+             </td>
+				
+                <td align="right" valign="top" width="1%" >
+                    <input type="image" name="btnCerrarOrganismo" id="btnCerrarOrganismo" class="cssGridAdvancedSearch" Text="Cerrar" src="../../../Includes/images/RNP/Buttons/cerrar.jpg" style="height:19px;border-width:0px;" />
+                </td>
+            </tr>
+            </table>
+           </td>
+       </tr>
+    </table>
+    <br />
+    <table cellpadding="0" cellspacing="0" style="width: 100%" class="cssEditTable" border="0">
+        <tr>
+            <td align="left">
+                &nbsp;</td><td align="left" class="cssFwkLabelTitleAzulSinUnderLine">
+                <span id="lblTitle"></span></td></tr><tr>
+            <td>
+                <br /></td>
+            <td>
+                <table border="0" cellpadding="0" cellspacing="0" class="cssEditTable" 
+                    style="width:100%">
+                    <tr class="formFilas">
+                        <td class="clsFormTextos" style="width: 30%">
+                            <span id="lblLegalName"></span>
+                        </td>
+                        <td class="clsFormInformacion" style="width: 70%; background-color: #ffffff;">
+                            <span id="lblDataLegalName" style="width: 70%"></span>
+                        </td>
+                    </tr>
+                    <tr class="formFilas">
+                        <td class="clsFormTextos" style="width: 30%">
+                            <span id="lblUnitBuyer"></span>
+                        </td>
+                        <td class="clsFormInformacion" style="width: 70%; background-color: #ffffff;">
+                            <span id="lblDataUnitBuyer" style="width: 70%"></span>
+                        </td>
+                    </tr>
+                    <tr class="formFilas">
+                        <td class="clsFormTextos" style="width: 30%">
+                            <span id="lblTaxId"></span>
+                        </td>
+                        <td class="clsFormInformacion" style="width: 70%; background-color: #ffffff;">
+                            <span id="lblDataTaxId" style="width: 70%"></span>
+                        </td>
+                    </tr>
+                    <tr class="formFilas">
+                        <td class="clsFormTextos" style="width: 30%">
+                            <span id="lblAddress"></span>
+                        </td>
+                        <td class="clsFormInformacion" style="width: 70%; background-color: #ffffff;">
+                            <span id="lblDataAddress" style="width: 70%"></span>
+                        </td>
+                    </tr>
+                    <tr class="formFilas">
+                        <td class="clsFormTextos" style="width: 30%">
+                            <span id="lblDistrict"></span>
+                        </td>
+                        <td class="clsFormInformacion" style="width: 70%; background-color: #ffffff;">
+                            <span id="lblDataDistrict" style="width: 70%"></span>
+                        </td>
+                    </tr>
+                    <tr class="formFilas">
+                        <td class="clsFormTextos" style="width: 30%">
+                            &nbsp;</td><td class="clsFormInformacion" style="width: 70%; background-color: #ffffff;">
+                            &nbsp;</td></tr></table></td></tr></table>
+			</div>
+     </td>
+     </tr>
+             <tr>
+               <td background="Utilidades/images/linea_gris.jpg" style="height: 1px">
+               </td>
+            </tr>
+    <input name="hdnOrganismo" type="hidden" id="hdnOrganismo" />
+    <input name="hdnOrden" type="hidden" id="hdnOrden" />
+    <tr style="background-color: White">
+            <td align="center" valign="middle" style="height: 18px" background="Utilidades/images/fondo-sitio.jpg">
+                <font color="#666666" size="1" face="Trebuchet MS">Derechos reservados www.chilecompra.cl</font>
+                <font size="1" face="Trebuchet MS"> | <a href="http://www.mercadopublico.cl/Portal/portal2008/mercado_publico/terminos_y_condiciones_mp.html">T&eacute;rminos y Condiciones de Uso</a>
+                 | <a href="http://www.chilecompra.cl/secciones/consultas_y_ayudas/documentos/Manual_Ley_20285_3%200%20_3_.pdf">Manual de Usuario Ley Acceso Informaci&oacute;n</a>
+                 <br />
+                 
+            </td>
+        </tr>
+    <tr>
+            <td align="left">
+                <img alt="" src="Utilidades/images/fondo-sitio-abajo.jpg" width="760" height="31" />
+            </td>
+        </tr>
+  </table>
+             </td>
+		</tr>
+	</table>
+	
+          <div class="demo" style=" visibility:hidden; width:100%">
+          <div id="dialogformBotones" title="Detalle Licitación">
+                   <table class="cssFilterTableRow" id="tablaResultado" width="100%">
+                        <tr>
+                            <td >
+                              </td>
+                        </tr>
+                    </table>
+                 </div>
+        </div> 
+                  <div style=" visibility:hidden; width:100% ">
+              <input type="submit" name="btnEspera" value="" id="btnEspera" />
+              <input type="submit" name="btnOrganismo" value="" id="btnOrganismo" />
+              <input type="submit" name="Button1" value="Button" id="Button1" />
+                    <input type="image" name="btnCerrarEspera" id="btnCerrarEspera" class="cssGridAdvancedSearch" Text="Cerrar" src="../../../Includes/images/RNP/Buttons/cerrar.jpg" style="height:19px;border-width:0px;" />
+        </div>   
+         </div>
+         <div id="PanelEspera" class="ui-widget-content">
+		 
+         <img id="imagenCargando" src="Utilidades/scripts/loadingAnimation.gif" style="border-width:0px;" /> 
+    
+	</div>
+    <MAP NAME="Map2" id="Map2">
+    <AREA SHAPE="rect" HREF="http://www.mercadopublico.cl"   COORDS="0,0,250,73"   target="_self" />
+    <AREA SHAPE="rect" HREF="http://www.chilecompra.cl"      COORDS="571,0,760,73" target="_self" />
+    </MAP>
+             <table id="_tblAdvancedSearch" class="cssEditTable" cellspacing="0" border="0" style="border-collapse:collapse;">
+
+	</table>
+    
+</div>
+    
+
+<script type="text/javascript">
+//<![CDATA[
+(function() {var fn = function() {$get("ToolkitScriptManager1_HiddenField").value = '';Sys.Application.remove_init(fn);};Sys.Application.add_init(fn);})();Sys.Application.add_init(function() {
+    $create(Sys.Extended.UI.ModalPopupBehavior, {"BackgroundCssClass":"modalBackground","CancelControlID":"btnCerrarOrganismo","PopupControlID":"PanelOrganismo","PopupDragHandleControlID":"PanelOrganismo","dynamicServicePath":"/Portal/Modules/Site/Busquedas/ResultadoBusqueda.aspx","id":"ModalPopupExtenderOrganismo"}, null, null, $get("Button1"));
+});
+Sys.Application.add_init(function() {
+    $create(Sys.Extended.UI.ModalPopupBehavior, {"BackgroundCssClass":"modalBackground","CancelControlID":"btnCerrarEspera","PopupControlID":"PanelEspera","PopupDragHandleControlID":"PanelEspera","dynamicServicePath":"/Portal/Modules/Site/Busquedas/ResultadoBusqueda.aspx","id":"ModalPopupExtenderEspera"}, null, null, $get("btnEspera"));
+});
+//]]>
+</script>
+</form>
+</body>
+</html>
+       
